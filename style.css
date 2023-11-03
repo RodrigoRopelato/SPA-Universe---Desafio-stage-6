@@ -102,3 +102,17 @@ p{
     font-size: 1.8rem;
     line-height: 160%;
 }
+
+#explore{
+    background-image: url('./assets/mountains-universe-3.png');
+    background-size: auto 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#universe{
+    background-image: url('./assets/mountains-universe02.png');
+    background-size: auto 100%;
+    background-position: center;
+    background-attachment: fixed;
+}

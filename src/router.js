@@ -20,6 +20,17 @@ export class Router {
 
         fetch(route).then(data=> data.text()).then(html =>{
             document.querySelector('#app').innerHTML = html
+
+            if(pathname.replace(/\//g, '') === ''){
+                pathname = 'home'
+            }
+            else if(route === '/pages/404.html'){
+                document.querySelector('#home').id = 'explore'
+            }
+            document.querySelector('#home').id = pathname.replace(/\//g, '')
         })
+
+        console.log(pathname)
+        console.log(route)
     }
 }
